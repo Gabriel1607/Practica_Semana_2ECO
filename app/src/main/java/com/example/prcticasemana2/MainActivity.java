@@ -110,11 +110,6 @@ verificarResp();
         new Thread(
                 () ->{
                     while(tiempoRest>0){
-                        runOnUiThread(
-                                ()->{
-                                    retryButton.setVisibility(View.GONE);
-                                }
-                        );
 
                         tiempoRest--;
                         runOnUiThread(
