@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -36,6 +37,7 @@ private boolean runTime;
         preguntaTxt = findViewById(R.id.preguntaTxt);
         tiempoTxt = findViewById(R.id.tiempoTxt);
         respuestaUser = findViewById(R.id.respuestaUser);
+        respuestaUser.setInputType( InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED);
         responderButton = findViewById(R.id.ResponderButton);
         retryButton = findViewById(R.id.retryButton);
         puntajeTxt = findViewById(R.id.puntajeTxt);
